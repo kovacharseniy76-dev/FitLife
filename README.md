@@ -11,6 +11,7 @@
 ```bash
 cd fitlife_app
 flutter create . --project-name fitlife --platforms=android,ios,web   # створює папки платформ (код у lib/ не змінюється)
+del test\widget_test.dart   # Windows (macOS/Linux: rm test/widget_test.dart) — шаблонний тест від flutter create
 flutter pub get
 flutter run -d chrome          # або flutter run на емуляторі / телефоні
 flutter test                   # модульні тести бізнес-логіки
